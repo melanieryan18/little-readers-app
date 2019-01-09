@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+DROP DATABASE IF EXISTS readers_db;
+CREATE DATABASE readers_db;
 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+USE readers_db;
