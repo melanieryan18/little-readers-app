@@ -1,14 +1,16 @@
 var db = require("../models");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
+var path = require("path");
+
 module.exports = function(app) {
   // Load signup page
   app.get("/", function(req, res) {
-    return res.render("index");
+    return res.sendFile(path.join(__dirname,"../index.html"));
   });
 
   // Load login page
   app.get("/login", function(req, res) {
-    res.render("login");
+    res.sendFile(path.join(__dirname, "../login.html"));
   });
 
 
@@ -23,7 +25,7 @@ module.exports = function(app) {
       where: {
         id: req.user.id
       },
-      include: [db.]
+      include: [db]
     }).then(function(dbUser) {
       res.render("profile", { user: dbUser });
     });
