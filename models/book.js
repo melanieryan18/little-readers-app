@@ -1,5 +1,5 @@
-module.exports = function (sequelize, DataTypes) {
-  var BooksRead = sequelize.define("BooksRead", {
+module.exports = function(sequelize, DataTypes) {
+  var Book = sequelize.define("Book", {
     // The email cannot be null, and must be a proper email before creation
     read: {
       type: DataTypes.BOOLEAN,
@@ -11,5 +11,5 @@ module.exports = function (sequelize, DataTypes) {
     }
   });
 
-  return BooksRead;
+  return Book;
 };
