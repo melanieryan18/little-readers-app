@@ -4,7 +4,6 @@ module.exports = function(sequelize, DataTypes) {
       wins: {
         type: DataTypes.INTEGER,
         allowNull: true
-        }
       },
       // The password cannot be null
       losses: {
@@ -16,12 +15,12 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
       },
       gradeLevel: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
         allowNull: false
-      },
+      }
   
     });
   
     GameStats.associate = function(models) {
       models.GameStats.hasMany(models.Example);
-    };
+    }};
