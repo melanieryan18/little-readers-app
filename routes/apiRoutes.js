@@ -23,13 +23,14 @@ module.exports = function(app) {
       password: req.body.password,
       firstName: req.body.firstName,
       lastName: req.body.lastName
-    })
-      .then(function() {
-        res.redirect(307, "/api/login");
-      })
-      .catch(function(err) {
-        res.status(422).json(err.errors[0].message);
-      });
+        // })bhu8./ /,,./
+        .then(function() {
+          res.redirect(307, "/api/login");
+        })
+        .catch(function(err) {
+          res.status(422).json(err.errors[0].message);
+        })
+    });
   });
 
   // Create a new example
@@ -56,15 +57,6 @@ module.exports = function(app) {
       res.json(dbBook);
     });
   });
-
-  // // Delete an example by id
-  // app.delete("/api/examples/:id", isAuthenticated, function (req, res) {
-  //   db.Example.destroy({ where: { id: req.params.id } }).then(function (
-  //     dbExample
-  //   ) {
-  //     res.json(dbExample);
-  //   });
-  // });
 
   // Route for logging user out
   app.get("/logout", function(req, res) {
