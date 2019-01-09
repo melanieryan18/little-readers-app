@@ -222,7 +222,7 @@ height:50000px;
   margin:5px;
   height:190px;
   width:190px;
-  margin-bottom:30px;
+  margin-bottom:10px;
 
 }
 
@@ -343,4 +343,11 @@ border-radius: 6px;
 
 .deleteBook:active::before {
 top:-2px;
+}
+
+.BooksIHaveRead {
+  font-size: 30px;
+  margin-bottom:5px;
+  color:white;
+  font-weight:800;
 }

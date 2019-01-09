@@ -6,7 +6,7 @@ $(document).ready(function(){
       
     });
   });
-
+ 
 
   //grabs input from input field
 $("body").on("click", ".addTitle", function(){
@@ -15,3 +15,9 @@ $("body").on("click", ".addTitle", function(){
 
   $(this).parent().html("<div class='a'><img class='haveRead' src='images/greenBook.png'><div class=BooksIHaveRead>" + BookInput + "</div><div class='deleteBook' >DeleteBook</div></div>");
 })
+
+
+//deletes a book
+$("body").on("click", ".deleteBook", function(){
+     $(this).parent().html("");
+  })
