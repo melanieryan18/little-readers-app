@@ -1,0 +1,174 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after { 
+    box-sizing: inherit;
+  }
+html body { 
+    background: url(../images/flowerPinkRoseTanColor.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    cursor: pointer;
+    line-height: 1.2;
+  }
+
+.picture {
+    float: left;
+    width:500px;
+    margin-left:110px;
+    margin-top:30px;
+    
+}
+
+#kittenPicture {
+    float:left;
+    width: 500px;
+    box-shadow: 2px 7px 15px #888888;
+    border-top: 35px solid white;
+
+}
+.Buttons {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    float: left;
+    border-radius: 60px;
+
+}
+
+#buttonBar{
+    background-color: rgba(37, 129, 65, 0.6);
+    box-shadow: 5px 10px 18px #888888;
+    padding:15px;
+    border-radius: 5px;
+    width:390px;
+    float:left;
+    margin-top:30px;
+ 
+    margin-bottom:30px;
+  
+
+}
+.text{
+    width: 500px;
+    height: 600px;
+    float: left;
+    margin-top:30px;
+    margin-right:40px;
+    margin-left: 40px;
+    background-color: white;
+    box-shadow: 2px 7px 15px #888888;
+    padding-top: 90px;
+    padding-right:60px;
+    padding-left:60px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+#writing{
+    font-size: 25px;
+  
+}
+
+.buttonsDOM {
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    float: left;
+    border-radius: 60px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modalPic{
+      width:20px;
+  }
+  .textModal {
+      font-size: 25px;
+    
+  }
+
+
+
+  #invisiblebox1 {
+    
+    width:250px;
+    height:170px;
+    z-index: 2;
+    position: fixed;
+    margin-top: 360px;
+    margin-left: 220px;
+}
+
+#invisiblebox2 {
+  
+  width:210px;
+  height:210px;
+  z-index: 2;
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 170px;
+
+}
+#invisiblebox3 {
+    
+    width:110px;
+    height:130px;
+    z-index: 2;
+    position: fixed;
+    margin-top: 230px;
+    margin-left: 380px;
+  
+  }

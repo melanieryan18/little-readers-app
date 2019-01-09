@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+      background-color: #1ae8cf;
+  }
+
+#bookshelveContainer{
+  text-align: center;
+}
+#myBookself{
+  float: left;
+  
+  margin:20px;
+  margin-top:270px;
+  color: white;
+  font-weight: 900;
+  font-size:70px;
+  text-align: center;
+}
+#myBooks {
+  margin-top: 300px;
+  text-align: center;
+  background-image: url(../../images/cartoonWoodGrain.jpg);
+  border: solid white 10px;
+  margin-left:5%;
+  margin-right:5%;
+
+}
+.haveRead{
+    margin:5px;
+    height:190px;
+    width:190px;
+    margin-bottom:30px;
+  
+}
+
+.arrows {
+  height: 150px;
+  margin-left:35px;
+  margin-right: 35px;
+  box-shadow: 10px 10px;
+  background-color: gray;
+  border-radius: 500px;
+
+}
+
+
+.arrows {
+	background-color: #75c700;
+    padding:20px;
+    width: 80px;
+    height:70px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
+	box-shadow: inset 0px 1px 0px #b2f17f, 0px 6px 0px #3d6f0d;
+    border-radius: 900px;
+    margin-bottom: 50px;
+}
+
+.arrows:active {
+	top:7px;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
+	box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+	color: #156785;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	background:  #75c700;
+}
+
+.arrows::before {
+	background-color:#072239;
+	content:"";
+	display:block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:4px;
+	left:-2px;
+	top:5px;
+	z-index:-1;
+	border-radius: 6px;
+	box-shadow: 0px 1px 0px #fff;
+}
+
+.arrows:active::before {
+	top:-2px;
+}
