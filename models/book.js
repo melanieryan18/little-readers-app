@@ -1,21 +1,19 @@
 module.exports = function (sequelize, DataTypes) {
-    var BooksRead = sequelize.define("BookRead", {
+    var BooksRead = sequelize.define("BooksRead", {
       // The email cannot be null, and must be a proper email before creation
-      wins: {
-        type: DataTypes.INTEGER,
-        allowNull: true
-      },
-      losses: {
-        type: DataTypes.INTEGER,
-        allowNull: true
-      },
-      difficulty: {
-        type: DataTypes.INTEGER,
+      read: {
+        type: DataTypes.BOOLEAN,
         allowNull: false
-      }
+        defaultValue: false,
+      },
+      bookName: {
+        type: DataTypes.VARCHAR,
+        allowNull: false,
+      },
+
     });
   
-    return GameStats;
+    return BooksRead;
   };
   
       // GameStats.associate = function(models) {
