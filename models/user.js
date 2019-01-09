@@ -17,7 +17,16 @@ module.exports = function(sequelize, DataTypes) {
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
+    age: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    gradeLevel: {
+      type: DataTypes.INTEGER
+      allowNull: true
+    },
+
   });
 
   User.associate = function(models) {
