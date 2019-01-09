@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/mylogo.png" type="image/png" sizes="16x16">
+    <title>The Hive | Register</title>
+
+    <!-- Bootstrap & CSS -->
+    <link rel='stylesheet' href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href="assets/css/homepage-index-style.css">
+
+    <!-- jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Google Font Links-->
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+
+    <style>
+        #registration-table th,
+    td {
+      display: inline-block;
+      width: 16.575%;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"> <img id="nav-logo" src="public/styles/image.png" title="image.png"></a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" id="profile-btn" href="#" hidden>My Profile</a>
+            </li>
+            <br>
+            <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false" hidden>Account</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" id="logout-btn" href="#">Log Out</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <br>
+
+    <!-- Employee Tracker -->
+    <div class="container">
+
+        <!-- Jumbotron -->
+        <div class="jumbotron reg-header">
+            <h1 class="h1-register">Register Your Little Reader!</h1>
+           
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Register Now  -->
+                <div class="card mb-4">
+                    <div class="card-header reg-header">Registration</div>
+                    <div class="card-body">
+
+                        <!-- Entry Form -->
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="username-input">Parent Email*</label>
+                                    <input class="form-control" id="username-input" placeholder="Username" type="text"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="pass-input">Create a Password (minimum 6 characters)*</label>
+                                    <input class="form-control" type="password" id="password-input" placeholder="At least 6 characters"
+                                        type="text" required> </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="first-input">Child's First Name*</label>
+                                    <input class="form-control" id="first-input" placeholder="First Name" type="text"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="last-input">Child's Last Name</label>
+                                    <input class="form-control" id="last-input" placeholder="Last Name" type="text">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="birthday-input">Birth Date</label>
+                                    <input class="form-control" id="birth-input" placeholder="01/01/1990" type="date"
+                                        min="00/00/0000">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="zip-input">Grade Level</label>
+                                    <input class="form-control" id="grade-input" placeholder="2nd" type="string"
+                                        data-bind="value:replyString" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <select class="form-control" id="annimal">
+                                        <option>Choose a Little Reader Avatar</option>
+                                        <!-- <option>Dog</option>
+                                        <option>Cat</option>
+                                        <option>Bird</option>
+                                        <option>Ferret</option>
+                                        <option>Turtle</option>
+                                        <option>Rabbit</option>
+                                        <option>Guinea pig</option>
+                                        <option>Tortoise</option>
+                                        <option>Hamster</option>
+                                        <option>Tiger</option>
+                                        <option>Lion</option> -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary float-right" id="register-user">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <footer class="ct-footer" id="main-foot">
+            <div class="container" id="footer-id">
+                <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+                    <div class="ct-footer-pre text-center-lg">
+                        <div class="inner" id="join-hive">
+                            <span>Join The Hive to receive updates, news & events!</span>
+                        </div>
+                        <div class="inner">
+                            <div class="form-group" id="value-id">
+                                <input name="formfields[nl_email]" id="nl_email" class="validate[required]" placeholder="Enter your email address"
+                                    type="text" value=""> <label for="nl_email" class="sr-only">Email Address</label>
+                                <button type="submit" class="btn btn-motive">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="ct-footer-meta text-center-sm" id="hivenum">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <address>
+                                <span>The Hive<br></span>500 5th Ave.<br>
+                                San Diego, California, 92101<br>
+                                <span>Phone: <a href="tel:5555555555">(555) 555-5555</a></span>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ct-footer-post">
+                <div class="container">
+                    <div class="inner-right">
+                        <p>Copyright © 2016 TheHiveCo.&nbsp;<a href="">Privacy Policy</a></p>
+                        <p><a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by: The Dream Team <a href=""
+                                target="_blank"></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+    <!-- javascript link -->
+    <script src="assets/javascript/authentication.js"></script>
+</body>
+
+</html>
