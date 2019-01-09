@@ -4,8 +4,7 @@ module.exports = function (sequelize, DataTypes) {
     wins: {
       type: DataTypes.INTEGER,
       allowNull: true
-    }
-  },
+    },
     losses: {
       type: DataTypes.INTEGER,
       allowNull: true
@@ -13,13 +12,11 @@ module.exports = function (sequelize, DataTypes) {
     difficulty: {
       type: DataTypes.INTEGER,
       allowNull: false
-    },
-    gradeLevel: {
-      type: DataTypes.INTEGER
-        allowNull: false
-    },
-  
-    });
+    }
+  });
+
+  return GameStats;
+};
 
     // GameStats.associate = function(models) {
     //   models.GameStats.hasMany(models.Example);

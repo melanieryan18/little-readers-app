@@ -23,10 +23,21 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     gradeLevel: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
       allowNull: true
     },
-
+    birthdate: {
+      type: DataTypes.DATE,
+      allowNull: true
+    },
+    firstName: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    lastName: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   });
 
   User.associate = function(models) {
