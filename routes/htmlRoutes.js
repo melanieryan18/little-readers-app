@@ -5,15 +5,16 @@ var path = require("path");
 module.exports = function(app) {
   // Load signup page
   app.get("/", function(req, res) {
-    return res.sendFile(path.join(__dirname, "../index.html"));
+    return res.sendFile(path.join(__dirname,"../index.html"));
   });
 
   // Load login page
-  app.get("/games", function(req, res) {
-    res.sendFile(path.join(__dirname, "../games.html"));
+  app.get("/login", function(req, res) {
+    res.sendFile(path.join(__dirname, "../login.html"));
   });
 
-  // Load signup page
+
+// Load signup page
   app.get("/signup", function(req, res) {
     res.render("signup");
   });

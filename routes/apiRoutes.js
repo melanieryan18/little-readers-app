@@ -3,6 +3,37 @@ var passport = require("../config/passport");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
+  // Get all examples
+  app.get("/api/examples", isAuthenticated, function(req, res) {
+    db.Example.findAll({
+      where: {
+        UserId: req.user.id
+      }
+    }).then(function(dbExamples) {
+      res.json(dbExamples);
+    });
+  });
+
+  // Create a new example
+  app.post("/api/examples", isAuthenticated, function(req, res) {
+    db.Example.create({
+      UserId: req.user.id,
+      text: req.body.text,
+      description: req.body.description
+    }).then(function(dbExample) {
+      res.json(dbExample);
+    });
+  });
+
+  // Delete an example by id
+  app.delete("/api/examples/:id", isAuthenticated, function(req, res) {
+    db.Example.destroy({ where: { id: req.params.id } }).then(function(
+      dbExample
+    ) {
+      res.json(dbExample);
+    });
+  });
+
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -23,39 +54,13 @@ module.exports = function(app) {
       password: req.body.password,
       firstName: req.body.firstName,
       lastName: req.body.lastName
-        // })bhu8./ /,,./
-        .then(function() {
-          res.redirect(307, "/api/login");
-        })
-        .catch(function(err) {
-          res.status(422).json(err.errors[0].message);
-        })
-    });
-  });
-
-  // Create a new example
-  app.post("/api/add-book", function(req, res) {
-    db.Book.create({
-      read: req.body.read,
-      bookName: req.body.bookName
     })
-      .then(function(dbBook) {
-        res.json(dbBook);
+      .then(function() {
+        res.redirect(307, "/api/login");
       })
       .catch(function(err) {
-        res.status(400).json(err);
+        res.status(422).json(err.errors[0].message);
       });
-  });
-
-  // Get all examples
-  app.get("/api/bookshelf", isAuthenticated, function(req, res) {
-    db.Book.findAll({
-      where: {
-        read: req.bookName
-      }
-    }).then(function(dbBook) {
-      res.json(dbBook);
-    });
   });
 
   // Route for logging user out
