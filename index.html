@@ -2,14 +2,19 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="icon" href="./images/mylogo.png" type="image/png" sizes="16x16">
-   <title>Little Readers | Learning for Kids</title>
-   <!--Google SignIn API-->
-   <script src="https://apis.google.com/js/platform.js" async defer></script>
-   <meta name="google-signin-client_id" content="382573838241-2neop956v4ihjdfpsmllp9bigop6uepr.apps.googleusercontent.com">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/mylogo.png" type="image/png" sizes="16x16">
+    <title>Little Readers | Learning for Kids</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/styles/normalize.css">
+    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
 
 
    <!-- CSS -->
@@ -26,41 +31,69 @@
 
 <body>
 
-   <div class="container" id="group-1">
-       <dgitiv class="row">
-           <div class="container">
-               <div class="row">
-                   <div class="col-md-5">
-                       <a class="navbar-brand" href="index.html"> <img id="nav-logo" src="images/image.png" alt="mylogo"></a>
-                       <h1>Text Here</h1>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, officiis? Iste eligendi
-                           eaque mollitia natus voluptas ipsam ratione hic iure iusto qui tenetur, blanditiis
-                           repudiandae eius minus harum aliquid sint?
-                   </div>
-                   <div class="col-md-1"></div>
 
-                   <div class="col-md-6">
-                       <form>
-                           <div class="form-group">
-                               <label for="username" type="email" id="white">Email</label>
-                               <input type="email" class="form-control" id="username">
-                               <small id="userAlert" class="alert"></small>
-                           </div>
-                           <div class="form-group">
-                               <label for="exampleInputPassword1" id="white">Password</label>
-                               <input type="password" class="form-control" id="password">
-                               <small id="passAlert" class="alert"></small>
-                           </div>
-                           <button type="submit" class="btn btn-outline-light" id="login">Login</button>
-                           <button class="btn btn-outline-light" id="register-white"><a href="registration.html">Create
-                                   an account with us</a></button>
-                       </form>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-   <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <!-- mast sections -->
+    <header class="masthead text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row splash">
+                <div class="col-md-5">
+                    <img class="img-fluid" src="images/logo-sunburst.png" title="little readers"></a>
+
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5 splash login">
+                    <h2>Log In To Start Learning</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="username" type="email" id="white">Email</label>
+                            <input type="email" class="form-control" id="username">
+                            <small id="userAlert" class="alert"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" id="white">Password</label>
+                            <input type="password" class="form-control" id="password">
+                            <small id="passAlert" class="alert"></small>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light" id="login">Login</button>
+                        <button class="btn btn-outline-light" id="register-white"><a href="registration.html">Create
+                                an account with us</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="masthead text-white text-center lib-preview splash">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">LIBRARY PREVIEW</h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <header class="masthead text-white text-center splash">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">GAMES PREVIEW</h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+
+                </div>
+            </div>
+        </div>
+    </header>
+>>>>>>> b8426d881d56332e66e226a83fbef4d983696040
 
    <!-- javascript link -->
    <script src="public/js/index.js"></script>
