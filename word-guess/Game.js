@@ -29,20 +29,20 @@ function Game() {
       // If the user has no guesses remaining after this guess, show them the word, ask if they want to play again
       if (self.guessesLeft < 1) {
         console.log(
-          "No guesses left! Word was: \"" +
-            self.currentWord.getSolution() +
-            "\"\n"
+          "No guesses left! Word was: \"" + self.currentWord.getSolution() + "\"\n"
         );
         self.askToPlayAgain();
 
         // If the user guessed all letters of the current word correctly, reset guessesLeft to 10 and get the next word
-      } else if (self.currentWord.guessedCorrectly()) {
+      }
+      else if (self.currentWord.guessedCorrectly()) {
         console.log("You got it right! Next word!");
         self.guessesLeft = 10;
         self.nextWord();
 
         // Otherwise prompt the user to guess the next letter
-      } else {
+      }
+      else {
         self.makeGuess();
       }
     });
@@ -62,7 +62,8 @@ function Game() {
         // If the user says yes to another game, play again, otherwise quit the game
         if (val.choice) {
           self.play();
-        } else {
+        }
+        else {
           self.quit();
         }
       });
@@ -89,7 +90,8 @@ function Game() {
           console.log(chalk.green("\nCORRECT!!!\n"));
 
           // Otherwise decrement `guessesLeft`, and let the user know how many guesses they have left
-        } else {
+        }
+        else {
           self.guessesLeft--;
           console.log(chalk.red("\nINCORRECT!!!\n"));
           console.log(self.guessesLeft + " guesses remaining!!!\n");
