@@ -14,14 +14,22 @@ height:300px;
 width:300px;
 
 }
+.singleTrophey{
+    margin-left: auto;
+margin-right: auto;
+height:300px;
+width:300px;
+}
 .inputBook {
 border: solid 2px #1ae8cf;
 height:50px;
 font-size: 20px;
 width: 200px;
-
+text-align: center;
+margin-left: 55px;
 
 }
+
 .addTitle {
 
 background-color: #f41971;
@@ -33,9 +41,10 @@ font-size: 25px;
 color:white;
 font-weight: 900;
 padding-top: 10px;
+padding-left:10px;
 margin-top:10px;
-margin-left: auto;
-margin-right: auto;
+margin-left: 65px;
+
 }
 
 
@@ -106,10 +115,11 @@ height:60px;
 font-size: 25px;
 color:white;
 font-weight: 900;
-padding-top: 10px;
+padding-top: 0px;
 margin-top:10px;
 margin-left: auto;
 margin-right: auto;
+text-align: center;
 }
 
 
@@ -208,6 +218,17 @@ font-weight: 900;
 font-size:70px;
 text-align: center;
 }
+#tropheyCase{
+    margin-top: 300px;
+/* text-align: center; */
+background-image: url(../../images/cartoonWoodGrain.jpg);
+border: solid white 10px;
+margin-left:5%;
+margin-right:5%;
+width: 500px;
+height:50000px;
+float: left;
+}
 #myBooks {
 margin-top: 300px;
 /* text-align: center; */
@@ -215,17 +236,26 @@ background-image: url(../../images/cartoonWoodGrain.jpg);
 border: solid white 10px;
 margin-left:5%;
 margin-right:5%;
-width: 1200px;
+width: 500px;
 height:50000px;
 float: left;
 
 }
 .haveRead{
-  margin:5px;
+  margin:65px;
   height:190px;
   width:190px;
   margin-bottom:10px;
+  
 
+}
+
+.award {
+    margin:5px;
+    height:190px;
+    width:190px;
+    margin-bottom:10px;
+    margin-left:50px;
 }
 
 
@@ -256,6 +286,7 @@ padding-top: 12px;
 margin-top:12px;
 margin-left: auto;
 margin-right: auto; 
+padding-left: 20px;
 position:relative;
 font-family: 'Open Sans', sans-serif;
 text-decoration:none;
@@ -299,6 +330,14 @@ top:-2px;
   margin-bottom:5px;
   color:white;
   font-weight:800;
+  text-align: center;
+}
+.gameName{
+    font-size: 30px;
+    margin-bottom:5px;
+    color:white;
+    font-weight:800;
+    text-align: center;
 }
 #libraryText{
   margin:10px;
@@ -391,6 +430,7 @@ html {
     border: solid white 5px; 
     margin-bottom:30px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    
 }
 
 
