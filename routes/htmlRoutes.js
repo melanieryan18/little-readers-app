@@ -3,18 +3,22 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 var path = require("path");
 
 module.exports = function(app) {
-  // Load signup page
+  // HOME
   app.get("/", function(req, res) {
     return res.sendFile(path.join(__dirname,"../index.html"));
   });
 
-  // Load login page
-  app.get("/login", function(req, res) {
-    res.sendFile(path.join(__dirname, "../login.html"));
+  app.get("/home", function(req, res) {
+    return res.sendFile(path.join(__dirname,"../home.html"));
   });
 
+  // LOGIN
   app.get("/library", function(req, res) {
     res.sendFile(path.join(__dirname, "../library.html"));
+  });
+// HOME/PROFILE
+  app.get("/games", function(req, res) {
+    res.sendFile(path.join(__dirname, "../games.html"));
   });
 
 
@@ -25,24 +29,13 @@ module.exports = function(app) {
 
   // Load profile page
   app.get("/bookshelf", isAuthenticated, function(req, res) {
-    db.User.findOne({
+    db.Book.findAll({
       where: {
         id: req.user.id
       },
       include: [db]
     }).then(function(dbUser) {
-      res.sendFile(path .join(__dirname,"bookshelf.html", { user: dbUser }));
-    });
-  });
-
-  // Load example page and pass in an example by id
-  app.get("/register", isAuthenticated, function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(
-      dbExample
-    ) {
-      res.render("registration", {
-        example: dbExample
-      });
+      res.sendFile(path .join(__dirname,"bookshelf.html"));
     });
   });
 
