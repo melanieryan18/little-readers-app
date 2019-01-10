@@ -1,4 +1,8 @@
 
+  .list-group-item {
+    line-height: 2.5;
+  }
+
   html, header, nav, body {
     background-color: #1AE8CF;
   }
@@ -9,11 +13,6 @@
   *, *:before, *:after {
     box-sizing: inherit;
   }
-
-  .list-group-item {
-    line-height: 2.5;
-  }
-  
 
   .splash {
     padding-top: 50px;
@@ -31,4 +30,14 @@
 
   .login {
     float:left;
+  }
+
+  #registration-table th,
+  td {
+    display: inline-block;
+    width: 16.575%;
+  }
+
+  .dark-blue {
+    background-color: #1A3139;
   }
