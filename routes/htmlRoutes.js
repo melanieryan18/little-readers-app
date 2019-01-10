@@ -13,21 +13,25 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../login.html"));
   });
 
+  app.get("/library", function(req, res) {
+    res.sendFile(path.join(__dirname, "../library.html"));
+  });
+
 
 // Load signup page
   app.get("/signup", function(req, res) {
-    res.render("signup");
+    res.sendFile(path.join(__dirname, "../registration.html"));
   });
 
   // Load profile page
-  app.get("/profile", isAuthenticated, function(req, res) {
+  app.get("/bookshelf", isAuthenticated, function(req, res) {
     db.User.findOne({
       where: {
         id: req.user.id
       },
       include: [db]
     }).then(function(dbUser) {
-      res.render("profile", { user: dbUser });
+      res.sendFile(path .join(__dirname,"bookshelf.html", { user: dbUser }));
     });
   });
 
