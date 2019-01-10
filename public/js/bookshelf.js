@@ -13,7 +13,7 @@ $("body").on("click", ".addTitle", function(){
   console.log($(this).parent().children()[1].value)
  var BookInput= $(this).parent().children()[1].value
 
-  $(this).parent().html("<div>'><img class='haveRead' src='images/greenBook.png'><div class=BooksIHaveRead>" + BookInput + "</div><div class='deleteBook' >DeleteBook</div></div>");
+  $(this).parent().html("<div><img class='haveRead' src='images/greenBook.png'><div class=BooksIHaveRead>" + BookInput + "</div><div class='deleteBook' >DeleteBook</div></div>");
 })
 
 

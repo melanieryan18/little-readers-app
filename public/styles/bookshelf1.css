@@ -43,7 +43,7 @@ font-weight: 900;
 padding-top: 10px;
 padding-left:10px;
 margin-top:10px;
-margin-left: 65px;
+margin-left: 90px;
 
 }
 
@@ -59,8 +59,7 @@ color:white;
 font-weight: 900;
 padding-top: 12px;
 margin-top:12px;
-margin-left: auto;
-margin-right: auto; 
+
 position:relative;
 font-family: 'Open Sans', sans-serif;
 text-decoration:none;
@@ -117,7 +116,7 @@ color:white;
 font-weight: 900;
 padding-top: 0px;
 margin-top:10px;
-margin-left: auto;
+margin-left: 100px;
 margin-right: auto;
 text-align: center;
 }
@@ -132,9 +131,9 @@ height:110px;
 font-size: 25px;
 color:white;
 font-weight: 900;
-padding-top: 22px;
+padding-top: 15px;
 margin-top:12px;
-margin-left: auto;
+
 margin-right: auto; 
 position:relative;
 font-family: 'Open Sans', sans-serif;
@@ -145,7 +144,7 @@ box-shadow: inset 0px 1px 0px #d67ff1, 0px 6px 0px #8f0a94;
 }
 
 .addBook:active {
-top:7px;
+top:5px;
 background-image: linear-gradient(bottom, rgb(158, 30, 170) 100%, rgb(214, 77, 238) 0%);
 box-shadow: inset 0px 1px 0px #e77ff1, inset 0px -1px 0px #6f0d4e;
 color: #156785;
@@ -219,25 +218,25 @@ font-size:70px;
 text-align: center;
 }
 #tropheyCase{
-    margin-top: 300px;
+    margin-top: 20px;
 /* text-align: center; */
 background-image: url(../../images/cartoonWoodGrain.jpg);
 border: solid white 10px;
 margin-left:5%;
 margin-right:5%;
 width: 500px;
-height:50000px;
+height:2000px;
 float: left;
 }
 #myBooks {
-margin-top: 300px;
+margin-top: 20px;
 /* text-align: center; */
 background-image: url(../../images/cartoonWoodGrain.jpg);
 border: solid white 10px;
 margin-left:5%;
 margin-right:5%;
 width: 500px;
-height:50000px;
+height:2000px;
 float: left;
 
 }
@@ -284,7 +283,7 @@ color:white;
 font-weight: 900;
 padding-top: 12px;
 margin-top:12px;
-margin-left: auto;
+margin-left: 65px;
 margin-right: auto; 
 padding-left: 20px;
 position:relative;
