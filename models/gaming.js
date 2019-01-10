@@ -17,7 +17,3 @@ module.exports = function (sequelize, DataTypes) {
 
   return GameStats;
 };
-
-    // GameStats.associate = function(models) {
-    //   models.GameStats.hasMany(models.Example);
-    // };

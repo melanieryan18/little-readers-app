@@ -30,21 +30,14 @@ module.exports = function(app) {
       losses: req.body.losses,
       difficulty: req.body.difficulty
     })
-      .catch(function(err) {
-        res.status(422).json(err.errors[0].message);
-      });
   });
 
-  app
-    .post("api/profile/book", function(req, res) {
+  app.post("api/profile/book", function(req, res) {
       console.log(req.body);
       db.Book.create({
         bookName: req.body.bookName,
         read: req.body
       });
-    })
-    .catch(function(err) {
-      res.status(422).json(err.errors[0].message);
     });
 
   // Route for logging user out
