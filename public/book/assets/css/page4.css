@@ -1,0 +1,211 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after { 
+    box-sizing: inherit;
+  }
+html body { 
+    background: url(../images/flowerPinkRoseTanColor.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    cursor: pointer;
+    line-height: 1.2;
+  }
+
+.picture {
+    float: left;
+    width:500px;
+
+    margin-left:110px;
+    margin-top:30px;
+    
+}
+
+#kittenPicture1 {
+    float:left;
+    width:500px;
+    height:600px;
+    box-shadow: 2px 7px 15px #888888;
+  
+
+}
+#kittenPicture2 {
+    float:left;
+    width:500px;
+    height:600px;
+    box-shadow: 2px 7px 15px #888888;
+  
+
+}
+#kittenPicture3 {
+    float:left;
+    width:500px;
+    height:600px;
+    box-shadow: 2px 7px 15px #888888;
+  
+
+}
+.Buttons {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    float: left;
+    border-radius: 60px;
+
+}
+
+#buttonBar{
+    background-color: rgba(37, 129, 65, 0.6);
+    box-shadow: 5px 10px 18px #888888;
+    padding:15px;
+    border-radius: 5px;
+    width:390px;
+    float:left;
+    margin-top:30px;
+ 
+    margin-bottom:30px;
+  
+}
+
+
+#lastButton{
+border: solid black 4px;
+    
+    padding:15px;
+    border-radius: 5px;
+    width:190px;
+    float:left;
+    margin-top:30px;
+    margin-left:90px;
+    margin-bottom:10px;
+    font-weight: 900;
+    color: black;
+  
+
+}
+.linktohome {
+    text-decoration: none;
+    color: black;
+}
+.text{
+    width: 500px;
+    height: 600px;
+    float: left;
+    margin-top:30px;
+    margin-right:40px;
+    margin-left: 40px;
+    background-color: white;
+    box-shadow: 2px 7px 15px #888888;
+    padding-top: 30px;
+    padding-right:60px;
+    padding-left:60px;
+ 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+#writing{
+    margin-top: 100px;
+    font-size: 70px;
+  
+}
+
+.buttonsDOM {
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    float: left;
+    border-radius: 60px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modalPic{
+      width:20px;
+  }
+  .textModal {
+      font-size: 25px;
+    
+  }
+
+
+
+  #invisiblebox1 {
+ 
+    width:180px;
+    height:260px;
+    z-index: 2;
+    position: fixed;
+    margin-top: 300px;
+    margin-left: 290px;
+}
+
+#invisiblebox2 {
+  
+    width:90px;
+    height:215px;
+    z-index: 2;
+    position: fixed;
+    margin-top: 75px;
+    margin-left: 490px;
+  
+  }
+
+  #kittenPicture {
+    float:left;
+    width:500px;
+    height:600px;
+    box-shadow: 2px 7px 15px #888888;
+}
