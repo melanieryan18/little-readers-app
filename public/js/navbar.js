@@ -1,4 +1,3 @@
-
   $(".navImg").hover(function(){
     $(this).parent().css("margin", "0px")
     $(this).attr("width", "110px" )
