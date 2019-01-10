@@ -14,14 +14,22 @@ height:300px;
 width:300px;
 
 }
+.singleTrophey{
+    margin-left: auto;
+margin-right: auto;
+height:300px;
+width:300px;
+}
 .inputBook {
 border: solid 2px #1ae8cf;
 height:50px;
 font-size: 20px;
 width: 200px;
-
+text-align: center;
+margin-left: 55px;
 
 }
+
 .addTitle {
 
 background-color: #f41971;
@@ -33,9 +41,10 @@ font-size: 25px;
 color:white;
 font-weight: 900;
 padding-top: 10px;
+padding-left:10px;
 margin-top:10px;
-margin-left: auto;
-margin-right: auto;
+margin-left: 90px;
+
 }
 
 
@@ -50,8 +59,7 @@ color:white;
 font-weight: 900;
 padding-top: 12px;
 margin-top:12px;
-margin-left: auto;
-margin-right: auto; 
+
 position:relative;
 font-family: 'Open Sans', sans-serif;
 text-decoration:none;
@@ -106,10 +114,11 @@ height:60px;
 font-size: 25px;
 color:white;
 font-weight: 900;
-padding-top: 10px;
+padding-top: 0px;
 margin-top:10px;
-margin-left: auto;
+margin-left: 100px;
 margin-right: auto;
+text-align: center;
 }
 
 
@@ -122,9 +131,9 @@ height:110px;
 font-size: 25px;
 color:white;
 font-weight: 900;
-padding-top: 22px;
+padding-top: 15px;
 margin-top:12px;
-margin-left: auto;
+
 margin-right: auto; 
 position:relative;
 font-family: 'Open Sans', sans-serif;
@@ -135,7 +144,7 @@ box-shadow: inset 0px 1px 0px #d67ff1, 0px 6px 0px #8f0a94;
 }
 
 .addBook:active {
-top:7px;
+top:5px;
 background-image: linear-gradient(bottom, rgb(158, 30, 170) 100%, rgb(214, 77, 238) 0%);
 box-shadow: inset 0px 1px 0px #e77ff1, inset 0px -1px 0px #6f0d4e;
 color: #156785;
@@ -208,24 +217,44 @@ font-weight: 900;
 font-size:70px;
 text-align: center;
 }
-#myBooks {
-margin-top: 300px;
+#tropheyCase{
+    margin-top: 20px;
 /* text-align: center; */
 background-image: url(../../images/cartoonWoodGrain.jpg);
 border: solid white 10px;
 margin-left:5%;
 margin-right:5%;
-width: 1200px;
-height:50000px;
+width: 500px;
+height:2000px;
+float: left;
+}
+#myBooks {
+margin-top: 20px;
+/* text-align: center; */
+background-image: url(../../images/cartoonWoodGrain.jpg);
+border: solid white 10px;
+margin-left:5%;
+margin-right:5%;
+width: 500px;
+height:2000px;
 float: left;
 
 }
 .haveRead{
-  margin:5px;
+  margin:65px;
   height:190px;
   width:190px;
   margin-bottom:10px;
+  
 
+}
+
+.award {
+    margin:5px;
+    height:190px;
+    width:190px;
+    margin-bottom:10px;
+    margin-left:50px;
 }
 
 
@@ -254,8 +283,9 @@ color:white;
 font-weight: 900;
 padding-top: 12px;
 margin-top:12px;
-margin-left: auto;
+margin-left: 65px;
 margin-right: auto; 
+padding-left: 20px;
 position:relative;
 font-family: 'Open Sans', sans-serif;
 text-decoration:none;
@@ -299,6 +329,14 @@ top:-2px;
   margin-bottom:5px;
   color:white;
   font-weight:800;
+  text-align: center;
+}
+.gameName{
+    font-size: 30px;
+    margin-bottom:5px;
+    color:white;
+    font-weight:800;
+    text-align: center;
 }
 #libraryText{
   margin:10px;
@@ -391,6 +429,7 @@ html {
     border: solid white 5px; 
     margin-bottom:30px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    
 }
 
 
@@ -455,5 +494,3 @@ body{
   margin-bottom:30px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
 }
-
-
