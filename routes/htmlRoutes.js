@@ -23,6 +23,11 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../registration.html"));
   });
 
+  app.get("/another/route", function(req, res){
+    // /res.render("signup");
+    res.sendFile(path.join(__dirname, "../registration.html"));
+  });
+
   // Load profile page
   app.get("/bookshelf", isAuthenticated, function(req, res) {
     db.User.findOne({
@@ -31,7 +36,8 @@ module.exports = function(app) {
       },
       include: [db]
     }).then(function(dbUser) {
-      res.sendFile(path .join(__dirname,"bookshelf.html", { user: dbUser }));
+      // Please use handlebars if you'd like to send the bookshelf.html with the user - below code will not work
+      res.sendFile(path.join(__dirname,"bookshelf.html", { user: dbUser }));
     });
   });
 
