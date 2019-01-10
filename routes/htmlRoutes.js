@@ -27,6 +27,11 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../registration.html"));
   });
 
+  app.get("/another/route", function(req, res){
+    // /res.render("signup");
+    res.sendFile(path.join(__dirname, "../registration.html"));
+  });
+
   // Load profile page
   app.get("/bookshelf", isAuthenticated, function(req, res) {
     db.Book.findAll({
