@@ -5,16 +5,20 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="icon" href="assets/images/mylogo.png" type="image/png" sizes="16x16">
+   <link rel="icon" href="./images/mylogo.png" type="image/png" sizes="16x16">
    <title>Little Readers | Learning for Kids</title>
+   <!--Google SignIn API-->
+   <script src="https://apis.google.com/js/platform.js" async defer></script>
+   <meta name="google-signin-client_id" content="382573838241-2neop956v4ihjdfpsmllp9bigop6uepr.apps.googleusercontent.com">
+
 
    <!-- CSS -->
-   <link rel="stylesheet" href="public/styles/normalize.css">
-   <link rel="stylesheet" href="public/styles/home.css">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/home.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
    crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="public/styles/navbar.css">
-<link rel="stylesheet" type="text/css" href="public/styles/library.css">
+<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+<link rel="stylesheet" type="text/css" href="styles/library.css">
 </head>
 
 
@@ -27,7 +31,7 @@
            <div class="container">
                <div class="row">
                    <div class="col-md-5">
-                       <a class="navbar-brand" href="index.html"> <img id="nav-logo" src="images/image.png" title="mylogo.png"></a>
+                       <a class="navbar-brand" href="index.html"> <img id="nav-logo" src="images/image.png" alt="mylogo"></a>
                        <h1>Text Here</h1>
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, officiis? Iste eligendi
                            eaque mollitia natus voluptas ipsam ratione hic iure iusto qui tenetur, blanditiis
@@ -56,6 +60,7 @@
            </div>
        </div>
    </div>
+   <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
    <!-- javascript link -->
    <script src="public/js/index.js"></script>

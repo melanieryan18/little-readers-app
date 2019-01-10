@@ -2,14 +2,14 @@ module.exports = function (sequelize, DataTypes) {
     var BooksRead = sequelize.define("BooksRead", {
       // The email cannot be null, and must be a proper email before creation
       read: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false
-        defaultValue: false,
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: false
       },
       bookName: {
         type: DataTypes.VARCHAR,
-        allowNull: false,
-      },
+        allowNull: false
+      }
 
     });
   
