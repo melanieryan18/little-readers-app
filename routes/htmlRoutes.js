@@ -1,14 +1,22 @@
 var db = require("../models");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
+var path = require("path");
+
 module.exports = function(app) {
   // Load signup page
   app.get("/", function(req, res) {
-    return res.render("signup");
+    return res.sendFile(path.join(__dirname,"../index.html"));
   });
 
   // Load login page
   app.get("/login", function(req, res) {
-    res.render("login");
+    res.sendFile(path.join(__dirname, "../login.html"));
+  });
+
+
+// Load signup page
+  app.get("/signup", function(req, res) {
+    res.render("signup");
   });
 
   // Load profile page
@@ -17,18 +25,18 @@ module.exports = function(app) {
       where: {
         id: req.user.id
       },
-      include: [db.Example]
+      include: [db]
     }).then(function(dbUser) {
       res.render("profile", { user: dbUser });
     });
   });
 
   // Load example page and pass in an example by id
-  app.get("/example/:id", isAuthenticated, function(req, res) {
+  app.get("/register", isAuthenticated, function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(
       dbExample
     ) {
-      res.render("example", {
+      res.render("registration", {
         example: dbExample
       });
     });

@@ -1,0 +1,218 @@
+  #nav-custom{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background-color: #60efdd;
+
+  }
+
+#navBar {
+    margin: 25px;
+    border: solid #adeb00 2px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 7px;
+    float: left;
+    margin-bottom: 5px;
+    
+}
+#insidenavBar {
+    float: left;
+    border: solid  #adeb00 2px;
+    border-radius: 20px;
+    background-color:  #75c700;
+    padding: 5px;
+}
+
+.item {
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-size: large;
+    font-weight: 900;
+    color: white;
+}
+
+.blackBorder {
+    border: solid  #adeb00 2px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#username {
+    margin:40px;
+    border-radius: 20px;
+    padding: 7px;
+    float: right;
+    border: solid  #ce1569 2px;
+    background-color: white;
+
+    
+
+}
+#usernameInside {
+    float: right;
+    border: solid  #ce1569 2px;
+    background-color: #f41971;
+    padding: 5px;
+    border-radius: 20px; 
+}
+
+.profilePic {
+    border-radius: 90px;
+    float: right;  
+    margin:5px;
+    border: solid  #ce1569 2px; 
+}
+
+.name {
+    font-size: 50px;
+    color: white;
+    margin:30px;
+    float: right; 
+}
+
+.home {
+    float: left;
+    clear:both;
+    flex-wrap: wrap;
+}
+
+#nav-logo {
+    height: 90px;
+}
+
+a {
+    color: white;
+}
+
+.nav-link {
+        background-color: transparent; 
+        color: white; 
+}
+
+
+#profile-btn:hover {
+    background-color: lightyellow;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: lightyellow;
+    color: black;
+    font-weight: bold;
+}
+
+.dropdown-item {
+    background-color: lightyellow;
+}
+h1 {
+    font-family: 'Neuton', serif;
+    text-align: center;
+    font-size: 36px;
+    color:white;
+}
+
+.h1-register{
+    color:white;
+    text-align: center;
+}
+
+.h3-register{
+    color: white;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+
+}
+.reg-header {
+    background-color: #343a40;
+    color:white;
+}
+
+body {
+    background: #1ae8cf;
+    background-size: cover;
+    font-family: 'Muli', sans-serif;
+}
+
+#group-1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #75c700;
+    color: white;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+#register-white:hover {
+    background-color: white;
+
+    
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    font-family: 'Muli', sans-serif;
+}
+
+.bgimage {
+    width:100%;
+    height:400px;
+    background: url('https://images.unsplash.com/photo-1542053755768-55960a1b88ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c038432f143f5a54eb09022cd6dfbdd&auto=format&fit=crop&w=1500&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+
+
+.bgimage h5 {
+    color:white;
+    text-shadow:2px 2px #333;
+  }
+  
+
+#white {
+    color:white;
+}
+
+.pad-top{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.ErrorMsg {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px
+}
+
+.Emsg {
+    color: red;
+    font-weight: bold;
+}
+
+
+#join-hive {
+    background: #333;
+    color: white;
+}
+
+#value-id {
+    background: #333;
+    color: white;
+}
+
+#hivenum {
+    background: #333;
+    color: white;
+}
+
+#main-foot {
+    background: #333;
+    color: white;
+} 
