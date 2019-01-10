@@ -68,7 +68,27 @@ html body {
  
     margin-bottom:30px;
   
+}
 
+
+#lastButton{
+border: solid black 4px;
+    
+    padding:15px;
+    border-radius: 5px;
+    width:190px;
+    float:left;
+    margin-top:30px;
+    margin-left:90px;
+    margin-bottom:10px;
+    font-weight: 900;
+    color: black;
+  
+
+}
+.linktohome {
+    text-decoration: none;
+    color: black;
 }
 .text{
     width: 500px;
