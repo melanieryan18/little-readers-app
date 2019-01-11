@@ -2,8 +2,6 @@ var db = require("../models");
 var passport = require("../config/passport");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
-
-
 module.exports = function(app) {
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
     res.redirect("/home");
@@ -27,17 +25,16 @@ module.exports = function(app) {
     });
   });
 
-
   // add books to database
   app.post("api/bookshelf", function(req, res) {
     console.log(req.body);
     db.Book.create({
-      bookName: req.body.bookName,
+      bookName: req.body.bookName
     });
   });
 
   // Display books that have been added to database
-  app.get("api/profile/bookshelf", function(req, res) {
+  app.get("api/bookshelf", function(req, res) {
     db.Book.findAll({}).then(function(data) {
       res.json(data);
     });
