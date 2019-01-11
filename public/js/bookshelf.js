@@ -3,30 +3,30 @@
 $(document).ready(function () {
   $(".addBook").click(function () {
     $(".nextBook").append("<div ><div class='a'><img class='haveRead' src='images/greenBook.png'><input type='text' class='inputBook' ><div class='addTitle' >Add Title</div></div></div>");
-    
-    // $("#add-book").on("submit", function (e) {
-    //   e.preventDefault();
-    //   $.ajax({
-    //     method: "POST",
-    //     url: "/api/bookshelf (TBD)",
-    //     data: {
-    //       email: $("#email")
-    //         .val()
-    //         .trim(),
-    //       password: $("#password")
-    //         .val()
-    //         .trim()
-    //     }
-    //   })
-    //     .then(function (data) {
-    //       console.log(data);
-    //       window.location.replace(data);
-    //     })
-    //     .catch(function (err) {
-    //       console.log(err);
-    //       alert(err.responseText);
-    //     });
-    // });
+
+    $("#add-book").on("submit", function (e) {
+      e.preventDefault();
+      $.ajax({
+        method: "POST",
+        url: "/api/bookshelf",
+        data: {
+          bookName: $(".a")
+            .val()
+            .trim(),
+          read: $(".haveRead")
+            .val()
+            .trim()
+        }
+      })
+        .then(function (data) {
+          console.log(data);
+          window.location.replace(data);
+        })
+        .catch(function (err) {
+          console.log(err);
+          alert(err.responseText);
+        });
+    });
 
   });
 });
@@ -44,4 +44,26 @@ $("body").on("click", ".addTitle", function () {
 //deletes a book
 $("body").on("click", ".deleteBook", function () {
   $(this).parent().html("");
+  e.preventDefault();
+  $.ajax({
+    method: "DELETE",
+    url: "/api/bookshelf",
+    data: {
+      bookName: $(".a")
+        .val()
+        .trim(),
+      read: $(".haveRead")
+        .val()
+        .trim()
+    }
+  })
+    .then(function (data) {
+      console.log(data);
+      window.location.replace(data);
+    })
+    .catch(function (err) {
+      console.log(err);
+      alert(err.responseText);
+    });
+});
 })
