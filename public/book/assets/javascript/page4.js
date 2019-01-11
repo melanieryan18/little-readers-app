@@ -52,7 +52,7 @@ $(document).ready(function () {
     $("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>")
     $("#Play").src = "assets/images/blackPlayButton.svg"
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'assets/javascript/Page1.mp3');
+    audioElement.setAttribute('src', 'assets/javascript/theend.mp3');
 
     audioElement.addEventListener('ended', function () {
         a = 0;
