@@ -6,7 +6,7 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
-    res.json("/home.html");
+    res.redirect("/home");
   });
   // ROUTE HERE TO DASHBOARD BEFORE - ONLY ONE RES.RENDER(DASHBOARD PAGE)
 

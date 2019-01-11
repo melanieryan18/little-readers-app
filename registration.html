@@ -50,38 +50,38 @@
                     <div class="card-body">
 
                         <!-- Entry Form -->
-                        <form>
+                        <form  action="/api/signup" method="post">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="username-input">Parent Email*</label>
-                                    <input class="form-control" id="email" placeholder="Username" type="text"
+                                    <input class="form-control" name="email" placeholder="Username" type="text"
                                         required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="pass-input">Create a Password (minimum 6 characters)*</label>
-                                    <input class="form-control" type="password" id="password" placeholder="At least 6 characters"
+                                    <input class="form-control" type="password" name="password" placeholder="At least 6 characters"
                                         type="text" required> </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="first-input">Child's First Name*</label>
-                                    <input class="form-control" id="firstName" placeholder="First Name" type="text"
+                                    <input class="form-control" name="firstName" placeholder="First Name" type="text"
                                         required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="last-input">Child's Last Name</label>
-                                    <input class="form-control" id="lastName" placeholder="Last Name" type="text">
+                                    <input class="form-control" name="lastName" placeholder="Last Name" type="text">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="birthday-input">Birth Date</label>
-                                    <input class="form-control" id="birthday" placeholder="01/01/1990" type="date"
+                                    <input class="form-control" name="birthday" placeholder="01/01/1990" type="date"
                                         min="00/00/0000">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="zip-input">Grade Level</label>
-                                    <input class="form-control" id="gradeLevel" placeholder="2" type="integer"
+                                    <input class="form-control" name="gradeLevel" placeholder="2" type="integer"
                                         data-bind="value:replyString" required>
                                 </div>
                             </div>
