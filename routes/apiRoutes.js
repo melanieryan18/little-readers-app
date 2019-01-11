@@ -19,8 +19,8 @@ module.exports = function(app) {
       email: req.body.email,
       password: req.body.password,
       firstName: req.body.firstName,
-      lastName: req.body.birthday,
       lastName: req.body.lastName,
+      birthday: req.body.birthday,
       gradeLevel: req.body.gradeLevel
     }).then(function() {
       res.redirect(307, "/api/login");
@@ -29,7 +29,7 @@ module.exports = function(app) {
 
 
   // add books to database
-  app.post("api/profile/bookshelf", function(req, res) {
+  app.post("api/bookshelf", function(req, res) {
     console.log(req.body);
     db.Book.create({
       bookName: req.body.bookName,
