@@ -7,5 +7,14 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
+  Book.associate = function(model) {
+    Book.belongsTo(model.User, {
+      onDelete: "CASCADE",
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
+
   return Book;
 };
