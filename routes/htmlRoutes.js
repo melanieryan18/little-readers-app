@@ -9,28 +9,28 @@ module.exports = function(app) {
   });
 
   app.get("/home", function(req, res) {
-    return res.sendFile(path.join(__dirname,"../home.html"));
+    return res.sendFile(path.join(__dirname,"../public/home.html"));
   });
 
   // LOGIN
   app.get("/library", function(req, res) {
-    res.sendFile(path.join(__dirname, "../library.html"));
+    res.sendFile(path.join(__dirname, "../public/library.html"));
   });
 // HOME/PROFILE
   app.get("/games", function(req, res) {
-    res.sendFile(path.join(__dirname, "../games.html"));
+    res.sendFile(path.join(__dirname, "../public/games.html"));
   });
 
 
 // Load signup page
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "../registration.html"));
+    res.sendFile(path.join(__dirname, "../public/registration.html"));
   });
 
-  app.get("/another/route", function(req, res){
-    // /res.render("signup");
-    res.sendFile(path.join(__dirname, "../registration.html"));
-  });
+  // app.get("/bookshelf", function(req, res){
+  //   // /res.render("signup");
+  //   res.sendFile(path.join(__dirname, "../bookshelf1.html"));
+  // });
 
   // Load profile page
   app.get("/bookshelf", isAuthenticated, function(req, res) {
