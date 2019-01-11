@@ -16,7 +16,9 @@ $("#user-sign-up").on("submit", function (e) {
       lastName: $("#firstName")
         .val()
         .trim(),
-      gradeLevel: {}
+      gradeLevel: $("#gradeLevel")
+        .val()
+        .trim()
     }
   })
     .then(function (data) {
