@@ -41,7 +41,7 @@ html {
     text-align: center;
 }
 
-.arrowsL {
+.arrowsl {
     /* height: 150px; */
     /* margin-left:10px;
     margin-right: 10px; */
@@ -80,7 +80,7 @@ html {
   
 }
 
-.arrowsL {
+.arrowsl {
 	background-color: #75c700;
     padding:20px;
     width:120px;
@@ -96,7 +96,7 @@ html {
     margin-bottom: 50px;
 }
 
-.arrowsL:active {
+.arrowsl:active {
 	top:7px;
 	background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
 	box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
@@ -105,7 +105,7 @@ html {
 	background:  #75c700;
 }
 
-.arrowsL::before {
+.arrowsl::before {
 	background-color:#072239;
 	content:"";
 	display:block;
@@ -122,6 +122,6 @@ html {
 	box-shadow: 0px 1px 0px #fff;
 }
 
-.arrowsL:active::before {
+.arrowsl:active::before {
 	top:-2px;
 }
