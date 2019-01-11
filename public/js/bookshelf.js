@@ -1,5 +1,17 @@
 //makes new book on add book
 $(document).ready(function() {
+  $.ajax({
+    method: "GET",
+    url: "/api/bookshelf"
+  })
+    .then(function(data) {
+      console.log(data);
+    })
+    .catch(function(err) {
+      console.log(err);
+      alert(err.responseText);
+    });
+
   $(".addBook").on("click", function(e) {
     e.preventDefault();
     $(".nextBook").append(
