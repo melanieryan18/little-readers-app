@@ -16,13 +16,13 @@ module.exports = function (sequelize, DataTypes) {
     // The password cannot be null
     password: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     gradeLevel: {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    birthDate: {
+    birthday: {
       type: DataTypes.DATE,
       allowNull: true
     },

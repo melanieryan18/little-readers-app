@@ -6,7 +6,7 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
-    res.render("profile");
+    res.redirect("/home");
   });
   // ROUTE HERE TO DASHBOARD BEFORE - ONLY ONE RES.RENDER(DASHBOARD PAGE)
 
@@ -19,6 +19,7 @@ module.exports = function(app) {
       email: req.body.email,
       password: req.body.password,
       firstName: req.body.firstName,
+      lastName: req.body.birthday,
       lastName: req.body.lastName,
       gradeLevel: req.body.gradeLevel
     }).then(function() {
