@@ -1,4 +1,3 @@
-var db = require("../models");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 var path = require("path");
 
@@ -27,14 +26,7 @@ module.exports = function(app) {
   });
 
   app.get("/bookshelf", isAuthenticated, function(req, res) {
-    db.Book.findAll({
-      where: {
-        id: req.user.id
-      },
-      include: [db]
-    }).then(function(dbUser) {
-      res.sendFile(path.join(__dirname, "bookshelf.html"));
-    });
+    res.sendFile(path.join(__dirname, "bookshelf.html"));
   });
 
   // Render 404 page for any unmatched routes

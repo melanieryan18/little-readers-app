@@ -8,11 +8,9 @@ function Word(word) {
   this.letters = [];
   var arr = word.split("");
   for (var i = 0; i < arr.length; i++) {
-    this.letters.push(new Letter(arr[i]))
+    this.letters.push(new Letter(arr[i]));
   }
-  console.log(this.letters)
-
-
+  console.log(this.letters);
 }
 
 // prototypes are optional, but will take up less memory than if we defined
@@ -21,9 +19,12 @@ function Word(word) {
 // setting the method on the prototype means all instances of Word share this code
 //    but when it is called, `this` refers to that particular instance
 Word.prototype.getSolution = function() {
-  return this.letters.map(function(letter) { // iterate over each letter
-    return letter.getSolution(); // return the solution for each to form an array of solved letters
-  }).join(""); // create a string from the array of solved letters
+  return this.letters
+    .map(function(letter) {
+      // iterate over each letter
+      return letter.getSolution(); // return the solution for each to form an array of solved letters
+    })
+    .join(""); // create a string from the array of solved letters
 };
 
 // setting `toString()` as a method lets us concatenate it like we would a string!
