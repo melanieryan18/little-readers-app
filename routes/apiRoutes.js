@@ -33,7 +33,6 @@ module.exports = function(app) {
     console.log(req.body);
     db.Book.create({
       bookName: req.body.bookName,
-      read: req.body
     });
   });
 
