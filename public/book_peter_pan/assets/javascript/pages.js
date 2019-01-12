@@ -14,26 +14,24 @@ $(document).ready(function () {
     $("span").mouseup(function () {
         $(this).css("background-color", "rgba(37, 127, 129, 0.6)")
     })
-});
+
 
 
 var word= ""
 
-// Code for getting value of span tags
-$("span").mousedown(function () {
-    console.log($(this).text())
-word=$(this).text()
 
-say(word)
-})
+$("span").hover(function(){
+    word=$(this).text()
+    say(word) 
 
 
+    word=" "
+    }, function(){
+        say(word) 
 
 
-
-
-
-
+        word=" "
+  });
 
 
 
@@ -44,6 +42,13 @@ say(word)
 
 
 
+
+
+
+
+
+
+});
 
 
 

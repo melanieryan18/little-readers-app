@@ -21,17 +21,25 @@ html body {
     margin-left:15%;
     padding:5%;  
     border: solid 10px white;
-}
-
-#chapterTitle{
-    font-size: 40px;
-    font-weight:600;
     text-align: center;
 }
 
-#textBody{
-    font-size: 30px;
-    font-weight:600;
+#hoverAndRead{
+    font-size:40px;
+
+}
+ #peterPan{
+    font-size:60px;
+ }
+ #author{
+    font-size:20px;
+ }
+ #instructions{
+    font-size:35px;
+ }
+#soundInstructions{
+    font-size:35px;
+    margin-bottom: 30px;
 }
 
 #buttonBar{
