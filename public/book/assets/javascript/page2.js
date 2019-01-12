@@ -6,11 +6,9 @@ $(".Buttons").mouseup(function() {
   $(this).css("background-color", "rgba(37, 127, 129, 0.6)");
 });
 
-$(".Buttons").hover(
-  function() {
+$(".Buttons").hover(function() {
   $(this).css("background-color", "rgba(37, 127, 129, 0.6)");
-  },
-  function() {
+  },function() {
   $(this).css("background-color", "rgba(0, 0, 0, 0)");
   }
 );
@@ -22,11 +20,9 @@ $("#playButtonGoesHere").mouseup(function() {
   $(this).css("background-color", "rgba(37, 127, 129, 0.6)");
 });
 
-$("#playButtonGoesHere").hover(
-  function() {
+$("#playButtonGoesHere").hover(function() {
   $(this).css("background-color", "rgba(37, 127, 129, 0.6)");
-  },
-  function() {
+  },function() {
   $(this).css("background-color", "rgba(0, 0, 0, 0)");
   }
 );
