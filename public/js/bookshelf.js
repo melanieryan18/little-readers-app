@@ -1,29 +1,35 @@
 //makes new book on add book
-$(document).ready(function () {
+$(document).ready(function() {
   $.ajax({
     method: "GET",
     url: "/api/bookshelf"
   })
-    .then(function (data) {
-      // for (i = 0; i < data.length; i++) {
-      //   $("#myBooks").append("<div ><div class='a'><img class='haveRead' src='images/greenBook.png'></div></div>" + data[i].bookName);
-      // }
+    .then(function(data) {
+      function displayBookshelf() {
+        for (i = 0; i < data.length; i++) {
+          $("#myBooks").append(
+            "<div><img class='haveRead' src='images/greenBook.png'></div></div>" +
+              data[i].bookName
+          );
+        }
+      }
+      displayBookshelf();
       console.log(data[0].bookName);
       console.log(data);
     })
-    .catch(function (err) {
+    .catch(function(err) {
       console.log(err);
       alert(err.responseText);
     });
 
-  $(".addBook").on("click", function (e) {
+  $(".addBook").on("click", function(e) {
     e.preventDefault();
     $(".nextBook").append(
       "<div ><div class='a'><img class='haveRead' src='images/greenBook.png'><input type='text' class='inputBook' ><div class='addTitle' >Add Title</div></div></div>"
     );
   });
 
-  $(".addTitle").on("click", function (e) {
+  $(".addTitle").on("click", function(e) {
     e.preventDefault();
     $.ajax({
       method: "POST",
@@ -34,10 +40,10 @@ $(document).ready(function () {
           .trim()
       }
     })
-      .then(function (data) {
+      .then(function(data) {
         console.log(data);
       })
-      .catch(function (err) {
+      .catch(function(err) {
         console.log(err);
         alert(err.responseText);
       });
@@ -45,7 +51,7 @@ $(document).ready(function () {
 });
 
 //grabs input from input field
-$("body").on("click", ".addTitle", function () {
+$("body").on("click", ".addTitle", function() {
   console.log(
     $(this)
       .parent()
@@ -59,13 +65,13 @@ $("body").on("click", ".addTitle", function () {
     .parent()
     .html(
       "<div><img class='haveRead' src='images/greenBook.png'><div class=BooksIHaveRead>" +
-      BookInput +
-      "</div><div class='deleteBook' >DeleteBook</div></div>"
+        BookInput +
+        "</div><div class='deleteBook' >DeleteBook</div></div>"
     );
 });
 
 //deletes a book
-$("body").on("click", ".deleteBook", function () {
+$("body").on("click", ".deleteBook", function() {
   $(this)
     .parent()
     .html("");
