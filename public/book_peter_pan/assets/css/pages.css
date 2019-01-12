@@ -1,0 +1,64 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+html body { 
+    cursor: pointer;
+    line-height: 1.9;
+    background: url(../images/starrynight.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+  }
+
+#textHolder {
+    background-color: rgb(165, 173, 161);
+    margin:5%;
+    margin-left:15%;
+    padding:5%;  
+    border: solid 10px white;
+}
+
+#chapterTitle{
+    font-size: 40px;
+    font-weight:600;
+    text-align: center;
+}
+
+#textBody{
+    font-size: 30px;
+    font-weight:600;
+}
+
+#buttonBar{
+    background-color: white;
+    border: solid 10px rgb(165, 173, 161);
+    height:230px;
+    width:130px;
+    position: fixed;
+    top:300px;
+    margin-left:2%;
+    padding:10px;
+}
+.soundButtons {
+    height: 90px;
+    width: 90px;
+}
+.soundOff {
+    height:65px;
+    width: 80px;
+    margin-left: 9px;
+}
+
+#pageForward{
+float:left;
+font-size: 30px;
+}
+#pageBack{
+float:right;
+font-size: 30px;
+}

@@ -16,11 +16,9 @@ $(".Buttons").mouseup(function() {
   $(this).css("background-color", "rgba(37, 127, 129, 0.6)");
 });
 
-$(".Buttons").hover(
-  function() {
+$(".Buttons").hover(function() {
   $(this).css("background-color", "rgba(37, 127, 129, 0.6)");
-  },
-  function() {
+  },function() {
   $(this).css("background-color", "rgba(0, 0, 0, 0)");
   }
 );
@@ -32,11 +30,9 @@ $("#playButtonGoesHere").mouseup(function() {
   $(this).css("background-color", "rgba(37, 127, 129, 0.6)");
 });
 
-$("#playButtonGoesHere").hover(
-  function() {
+$("#playButtonGoesHere").hover(function() {
   $(this).css("background-color", "rgba(37, 127, 129, 0.6)");
-  },
-  function() {
+  },function() {
   $(this).css("background-color", "rgba(0, 0, 0, 0)");
   }
 );
@@ -44,8 +40,7 @@ $("#playButtonGoesHere").hover(
 // audio ---------------------------------------------
 
 $(document).ready(function() {
-  $("#playButtonGoesHere").html(
-    "<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>"
+  $("#playButtonGoesHere").html("<img src='assets/images/blackPlayButton.svg' alt='PlayButton' class='Buttons canplay canpause' Title='Play' id='Play'></img>");
   $("#Play").src = "assets/images/blackPlayButton.svg";
   var audioElement = document.createElement("audio");
   audioElement.setAttribute("src", "assets/javascript/tomkit.mp3");
@@ -79,6 +74,7 @@ $(document).ready(function() {
 
     } 
     }
+  
   });
 
   $("span").hover(function(){
