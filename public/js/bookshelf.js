@@ -5,6 +5,16 @@ $(document).ready(function() {
     url: "/api/bookshelf"
   })
     .then(function(data) {
+      function displayBookshelf() {
+        for (i = 0; i < data.length; i++) {
+          $("#myBooks").append(
+            "<div><img class='haveRead' src='images/greenBook.png'></div></div>" +
+              data[i].bookName
+          );
+        }
+      }
+      displayBookshelf();
+      console.log(data[0].bookName);
       console.log(data);
     })
     .catch(function(err) {
