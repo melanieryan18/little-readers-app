@@ -37,7 +37,7 @@ html body {
 #buttonBar{
     background-color: white;
     border: solid 10px rgb(165, 173, 161);
-    height:230px;
+    height:130px;
     width:130px;
     position: fixed;
     top:300px;
