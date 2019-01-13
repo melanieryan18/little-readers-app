@@ -17,23 +17,49 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+    $("img").hover(function(){
+        $(this).css("background-color", "rgba(37, 127, 129, 0.6)")
+    }, function(){
+        $(this).css("background-color",  "white")
+    })
+
+    $("img").mousedown(function () {
+        $(this).css("background-color", "rgba(37, 87, 129, 0.6)")
+    })
+    
+    $("img").mouseup(function () {
+        $(this).css("background-color", "rgba(37, 127, 129, 0.6)")
+    })
+
+
+
+
+
 var word= ""
 
 
+  var tOut;
 $("span").hover(function(){
     word=$(this).text()
-    say(word) 
-
-
-    word=" "
-    }, function(){
-        say(word) 
-
-
-        word=" "
-  });
-
-
+    tOut = setTimeout(function(){
+        
+         say(word) 
+        
+        console.log(word)
+        
+    },150);
+},function(){
+    clearTimeout(tOut);
+   
+});
 
 
 

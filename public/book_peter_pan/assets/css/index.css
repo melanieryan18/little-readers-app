@@ -45,10 +45,10 @@ html body {
 #buttonBar{
     background-color: white;
     border: solid 10px rgb(165, 173, 161);
-    height:230px;
+    height:300px;
     width:130px;
     position: fixed;
-    top:300px;
+    top:200px;
     margin-left:2%;
     padding:10px;
 }
@@ -65,8 +65,20 @@ html body {
 #pageForward{
 float:left;
 font-size: 30px;
+color:black;
 }
+
 #pageBack{
 float:right;
 font-size: 30px;
+color:black;
 }
+
+/* span:hover {
+    background:#5AC900;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+} */
