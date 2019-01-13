@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "LbmPassword",
     "database": "readers_db",
     "host": "localhost",
     "dialect": "mysql"
