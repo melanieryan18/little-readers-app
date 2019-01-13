@@ -11,14 +11,20 @@ module.exports = function(app) {
     return res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 
-  // LOGIN
+  // LIBRARY
   app.get("/library", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/library.html"));
   });
-  // HOME/PROFILE
+  // GAMES
   app.get("/games", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/games.html"));
   });
+
+  app.get("/hockey", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/games/hockeygame.html"));
+  });
+
+
 
   // Load signup page
   app.get("/signup", function(req, res) {
@@ -29,9 +35,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "bookshelf.html"));
   });
 
+ 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
-    res.render("404");
+    res.sendFile(path.join(__dirname, "../public/404.html"));
   });
 
   app.get("/title", function(req, res) {
@@ -58,6 +65,29 @@ module.exports = function(app) {
     // /res.render("signup");
     res.sendFile(path.join(__dirname, "../book/page4.html"));
   });
+
+  app.get("/title1", function(req, res) {
+    // /res.render("signup");
+    res.sendFile(path.join(__dirname, "../book_peter_pan/index.html"));
+  });
+
+  app.get("/page_1", function(req, res) {
+    // /res.render("signup");
+    res.sendFile(path.join(__dirname, "../book_peter_pan/page1.html"));
+  });
+
+  app.get("/page_2", function(req, res) {
+    // /res.render("signup");
+    res.sendFile(path.join(__dirname, "../book_peter_pan/page2.html"));
+  });
+
+  app.get("/page_3", function(req, res) {
+    // /res.render("signup");
+    res.sendFile(path.join(__dirname, "../book_peter_pan/theend.html"));
+  });
+
+
+
 };
 
 // Load profile page
