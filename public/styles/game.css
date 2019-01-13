@@ -125,3 +125,7 @@ html {
 .arrows:active::before {
 	top:-2px;
 }
+
+#myCanvas {
+    margin: auto;
+}
