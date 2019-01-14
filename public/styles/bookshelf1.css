@@ -4,248 +4,203 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }*/
+
 body{
-    background-color: #1ae8cf;
+  background-color: #1ae8cf;
 }
 .singleBook{
-margin-left: auto;
-margin-right: auto;
-height:300px;
-width:300px;
-
+  margin-left: auto;
+  margin-right: auto;
+  height:300px;
+  width:300px;
 }
+
 .singleTrophey{
-    margin-left: auto;
-margin-right: auto;
-height:300px;
-width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  height:300px;
+  width:300px;
 }
 .inputBook {
-border: solid 2px #1ae8cf;
-height:50px;
-font-size: 20px;
-width: 200px;
-text-align: center;
-margin-left: 55px;
-
+  border: solid 2px #1ae8cf;
+  height:50px;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
+  margin-left: 55px;
 }
 
 .addTitle {
-
-background-color: #f41971;
-border: white solid 2px;
-border-radius: 20px;
-width: 130px;
-height:60px;
-font-size: 25px;
-color:white;
-font-weight: 900;
-padding-top: 10px;
-padding-left:10px;
-margin-top:10px;
-margin-left: 90px;
-
+  background-color: #f41971;
+  border: white solid 2px;
+  border-radius: 20px;
+  width: 130px;
+  height:60px;
+  font-size: 22px;
+  color:white;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-left:10px;
+  margin-top:10px;
+  margin-left: 90px;
 }
 
-
 .addTitle {
-background-color: #f41971;
-border: white solid 2px;
-border-radius: 20px;
-width: 130px;
-height:60px;
-font-size: 25px;
-color:white;
-font-weight: 900;
-padding-top: 12px;
-margin-top:12px;
-
-position:relative;
-font-family: 'Open Sans', sans-serif;
-text-decoration:none;
-background-image: linear-gradient(bottom, rgb(180, 81, 197) 0%, rgb(211, 104, 243) 100%);
-box-shadow: inset 0px 1px 0px #d67ff1, 0px 6px 0px #8f0a94;
-
+  background-color: #f41971;
+  border: white solid 2px;
+  border-radius: 20px;
+  width: 130px;
+  height:60px;
+  font-size: 25px;
+  color:white;
+  font-weight: 900;
+  padding-top: 12px;
+  margin-top:12px;
+  position:relative;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration:none;
+  background-image: linear-gradient(bottom, rgb(180, 81, 197) 0%, rgb(211, 104, 243) 100%);
+  box-shadow: inset 0px 1px 0px #d67ff1, 0px 6px 0px #8f0a94;
 }
 
 .addTitle:active {
-top:7px;
-background-image: linear-gradient(bottom, rgb(158, 30, 170) 100%, rgb(214, 77, 238) 0%);
-box-shadow: inset 0px 1px 0px #e77ff1, inset 0px -1px 0px #6f0d4e;
-color: #156785;
-text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
-background: #f41971;
+  top:7px;
+  background-image: linear-gradient(bottom, rgb(158, 30, 170) 100%, rgb(214, 77, 238) 0%);
+  box-shadow: inset 0px 1px 0px #e77ff1, inset 0px -1px 0px #6f0d4e;
+  color: #156785;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+  background: #f41971;
 }
 
 .addTitle::before {
 /* background-color:#072239; */
-content:"";
-display:block;
-position:absolute;
-width:100%;
-height:100%;
-padding-left:2px;
-padding-right:2px;
-padding-bottom:4px;
-left:-2px;
-top:5px;
-z-index:-1;
-border-radius: 6px;
+  content:"";
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  padding-left:2px;
+  padding-right:2px;
+  padding-bottom:4px;
+  left:-2px;
+  top:5px;
+  z-index:-1;
+  border-radius: 6px;
 /* box-shadow: 0px 1px 0px #fff; */
 }
 
 .addTitle:active::before {
-top:-2px;
+  top:-2px;
 }
 
-
-
-
-
-
-
 .addBook {
-
-background-color: #f41971;
-border: white solid 2px;
-border-radius: 20px;
-width: 130px;
-height:60px;
-font-size: 25px;
-color:white;
-font-weight: 900;
-padding-top: 0px;
-margin-top:10px;
-margin-left: 100px;
-margin-right: auto;
-text-align: center;
+  background-color: #f41971;
+  border: white solid 2px;
+  border-radius: 20px;
+  width: 130px;
+  height:60px;
+  font-size: 25px;
+  color:white;
+  font-weight: 900;
+  padding-top: 0px;
+  margin-top:10px;
+  margin-left: 100px;
+  margin-right: auto;
+  text-align: center;
 }
 
 
 .addBook {
-background-color: #f41971;
-border: white solid 2px;
-border-radius: 900px;
-width: 110px;
-height:110px;
-font-size: 25px;
-color:white;
-font-weight: 900;
-padding-top: 15px;
-margin-top:12px;
-margin-right: auto; 
-position:relative;
-font-family: 'Open Sans', sans-serif;
-text-decoration:none;
-background-image: linear-gradient(bottom, rgb(180, 81, 197) 0%, rgb(211, 104, 243) 100%);
-box-shadow: inset 0px 1px 0px #d67ff1, 0px 6px 0px #8f0a94;
-
+  background-color: #f41971;
+  border: white solid 2px;
+  border-radius: 900px;
+  width: 110px;
+  height:110px;
+  font-size: 25px;
+  color:white;
+  font-weight: 900;
+  padding-top: 15px;
+  margin-top:12px;
+  margin-right: auto; 
+  position:relative;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration:none;
+  background-image: linear-gradient(bottom, rgb(180, 81, 197) 0%, rgb(211, 104, 243) 100%);
+  box-shadow: inset 0px 1px 0px #d67ff1, 0px 6px 0px #8f0a94;
 }
 
 .addBook:active {
-top:5px;
-background-image: linear-gradient(bottom, rgb(158, 30, 170) 100%, rgb(214, 77, 238) 0%);
-box-shadow: inset 0px 1px 0px #e77ff1, inset 0px -1px 0px #6f0d4e;
-color: #156785;
-text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
-background: #f41971;
+  top:5px;
+  background-image: linear-gradient(bottom, rgb(158, 30, 170) 100%, rgb(214, 77, 238) 0%);
+  box-shadow: inset 0px 1px 0px #e77ff1, inset 0px -1px 0px #6f0d4e;
+  color: #156785;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+  background: #f41971;
 }
 
 .addBook::before {
-/* background-color:#072239; */
-content:"";
-display:block;
-position:absolute;
-width:100%;
-height:100%;
-padding-left:2px;
-padding-right:2px;
-padding-bottom:4px;
-left:-2px;
-top:5px;
-z-index:-1;
-border-radius: 6px;
-/* box-shadow: 0px 1px 0px #fff; */
+  /* background-color:#072239; */
+  content:"";
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  padding-left:2px;
+  padding-right:2px;
+  padding-bottom:4px;
+  left:-2px;
+  top:5px;
+  z-index:-1;
+  border-radius: 6px;
+  /* box-shadow: 0px 1px 0px #fff; */
 }
 
 .addBook:active::before {
-top:-2px;
+  top:-2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #bookshelveContainer{
-text-align: center;
+  text-align: center;
 }
 #myBookself{
-float: left;
-
-margin:20px;
-margin-top:270px;
-color: white;
-font-weight: 900;
-font-size:70px;
-text-align: center;
+  float: left;
+  margin:20px;
+  margin-top:270px;
+  color: white;
+  font-weight: 900;
+  font-size:70px;
+  text-align: center;
 }
+
 #tropheyCase{
-    margin-top: 20px;
-/* text-align: center; */
-background-image: url(../../images/cartoonWoodGrain.jpg);
-border: solid white 10px;
-margin-left:5%;
-margin-right:5%;
-width: 500px;
-height:2000px;
-float: left;
+  margin-top: 20px;
+  /* text-align: center; */
+  background-image: url(../../images/cartoonWoodGrain.jpg);
+  border: solid white 10px;
+  margin-left:5%;
+  margin-right:5%;
+  width: 500px;
+  height:2000px;
+  float: left;
 }
-#myBooks {
-margin-top: 20px;
-/* text-align: center; */
-background-image: url(../../images/cartoonWoodGrain.jpg);
-border: solid white 10px;
-margin-left:5%;
-margin-right:5%;
-width: 500px;
-height:2000px;
-float: left;
 
+#myBooks {
+  margin-top: 20px;
+  /* text-align: center; */
+  background-image: url(../../images/cartoonWoodGrain.jpg);
+  border: solid white 10px;
+  margin-left:5%;
+  margin-right:5%;
+  width: 500px;
+  height:2000px;
+  float: left;
 }
+
 .haveRead{
   margin:65px;
   height:190px;
   width:190px;
   margin-bottom:10px;
-  
-
 }
 
 .award {
@@ -256,71 +211,55 @@ float: left;
     margin-left:50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .deleteBook {
-background-color: #75c700;
-border: white solid 2px;
-border-radius: 20px;
-width: 180px;
-height:60px;
-font-size: 25px;
-color:white;
-font-weight: 900;
-padding-top: 12px;
-margin-top:12px;
-margin-left: 65px;
-margin-right: auto; 
-padding-left: 20px;
-position:relative;
-font-family: 'Open Sans', sans-serif;
-text-decoration:none;
-background-image: linear-gradient(bottom, #adeb00, #99cc00 100%);
-box-shadow: inset 0px 1px 0px #adeb00, 0px 6px 0px #596e18;
-
+  background-color: #75c700;
+  border: white solid 2px;
+  border-radius: 20px;
+  width: 180px;
+  height:60px;
+  font-size: 25px;
+  color:white;
+  font-weight: 900;
+  padding-top: 12px;
+  margin-top:12px;
+  margin-left: 65px;
+  margin-right: auto; 
+  padding-left: 20px;
+  position:relative;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration:none;
+  background-image: linear-gradient(bottom, #adeb00, #99cc00 100%);
+  box-shadow: inset 0px 1px 0px #adeb00, 0px 6px 0px #596e18;
 }
 
 .deleteBook:active {
-top:7px;
-background-image: linear-gradient(bottom, #99cc00 100%, #adeb00 0%);
-box-shadow: inset 0px 1px 0px #adeb00, inset 0px -1px 0px #313d0b;
-color: #156785;
-text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
-background: #75c700;
+  top:7px;
+  background-image: linear-gradient(bottom, #99cc00 100%, #adeb00 0%);
+  box-shadow: inset 0px 1px 0px #adeb00, inset 0px -1px 0px #313d0b;
+  color: #156785;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+  background: #75c700;
 }
 
 .deleteBook::before {
-/* background-color:#072239; */
-content:"";
-display:block;
-position:absolute;
-width:100%;
-height:100%;
-padding-left:2px;
-padding-right:2px;
-padding-bottom:4px;
-left:-2px;
-top:5px;
-z-index:-1;
-border-radius: 6px;
-/* box-shadow: 0px 1px 0px #fff; */
+  /* background-color:#072239; */
+  content:"";
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  padding-left:2px;
+  padding-right:2px;
+  padding-bottom:4px;
+  left:-2px;
+  top:5px;
+  z-index:-1;
+  border-radius: 6px;
+  /* box-shadow: 0px 1px 0px #fff; */
 }
 
 .deleteBook:active::before {
-top:-2px;
+  top:-2px;
 }
 
 .BooksIHaveRead {
@@ -360,22 +299,6 @@ top:-2px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 html {
     box-sizing: border-box;
   }
@@ -386,15 +309,14 @@ html {
       background-color: #1ae8cf;
   }
 
-  #libraryContainer {
-
-    margin-top: 270px;
-    padding: 0;
-    width: 100%;
-    /* background-color: #60efdd; */
-    background-color:  #8ff4e7;
-   
+#libraryContainer {
+  margin-top: 270px;
+  padding: 0;
+  width: 100%;
+  /* background-color: #60efdd; */
+  background-color:  #8ff4e7; 
 }
+
 #libraryText{
     margin:10px;
     float: left;
@@ -432,14 +354,6 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
 html {
   box-sizing: border-box;
 }
@@ -451,14 +365,13 @@ body{
 }
 
 #libraryContainer {
-
   margin-top: 270px;
   padding: 0;
   width: 100%;
   /* background-color: #60efdd; */
   background-color:  #8ff4e7;
- 
 }
+
 #libraryText{
   margin:10px;
   float: left;
@@ -468,7 +381,8 @@ body{
   margin-top:30px;
   margin-left:30px;
 }
-#logo{
+
+#logo {
   margin:10px;
   border-radius: 20px;
   border: solid #1ae8cf 2px; 
@@ -482,8 +396,6 @@ body{
   margin-top:30px;
   text-align: center;
 }
-
-
 
 .book{
   margin:10px;
