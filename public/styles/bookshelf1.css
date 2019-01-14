@@ -1,9 +1,9 @@
-/* html {
+html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
-}*/
+}
 body{
     background-color: #1ae8cf;
 }
@@ -30,22 +30,7 @@ margin-left: 55px;
 
 }
 
-.addTitle {
 
-background-color: #f41971;
-border: white solid 2px;
-border-radius: 20px;
-width: 130px;
-height:60px;
-font-size: 25px;
-color:white;
-font-weight: 900;
-padding-top: 10px;
-padding-left:10px;
-margin-top:10px;
-margin-left: 90px;
-
-}
 
 
 .addTitle {
@@ -59,6 +44,7 @@ color:white;
 font-weight: 900;
 padding-top: 12px;
 margin-top:12px;
+margin-left: 90px;
 
 position:relative;
 font-family: 'Open Sans', sans-serif;
@@ -376,15 +362,6 @@ top:-2px;
 
 
 
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  body{
-      background-color: #1ae8cf;
-  }
 
   #libraryContainer {
 
@@ -421,15 +398,6 @@ html {
 
 
 
-.book{
-    margin:10px;
-    height:180px;
-    width:240px;
-    border: solid white 5px; 
-    margin-bottom:30px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-    
-}
 
 
 
