@@ -9,7 +9,7 @@ $(document).ready(function() {
       console.log(data[0].bookName);
       for (var i = 0; i < data.length; i++) {
         $("#myBooks").append(
-          "<div class='singleBook'><div class='a'><img class='haveRead' src='images/greenBook.png'>><div class='addTitle'>" +
+          "<div class='singleBook'><div class='a'><img class='haveRead' src='images/greenBook.png'><div class='addTitle'>" +
             data[i].bookName +
             "</div></div></div>"
         );
@@ -17,7 +17,7 @@ $(document).ready(function() {
     })
     .catch(function(err) {
       console.log(err);
-      alert(err.responseText);
+     
     });
 
   $(".addBook").on("click", function(e) {
@@ -43,7 +43,7 @@ $(document).ready(function() {
       })
       .catch(function(err) {
         console.log(err);
-        alert(err.responseText);
+        
       });
   });
 });
