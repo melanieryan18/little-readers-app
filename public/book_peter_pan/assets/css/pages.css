@@ -62,3 +62,14 @@ font-size: 30px;
 float:right;
 font-size: 30px;
 }
+#pageForward{
+    float:left;
+    font-size: 30px;
+    color:black;
+    }
+    
+    #pageBack{
+    float:right;
+    font-size: 30px;
+    color:black;
+    }
