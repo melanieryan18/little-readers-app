@@ -6,9 +6,13 @@ $(document).ready(function() {
   })
     .then(function(data) {
       console.log(data);
-      console.log(data[0].bookName)
+      console.log(data[0].bookName);
       for (var i = 0; i < data.length; i++) {
-        $("#myBooks").append("<div><div class='a'><img class='haveRead' src='images/greenBook.png'></div></div>" + data[i].bookName);
+        $("#library").append(
+          "<div><div class='a'><img class='haveRead' src='images/greenBook.png'></div></div><div class='addTitle'>" +
+            data[i].bookName +
+            "</div>"
+        );
       }
     })
     .catch(function(err) {
